@@ -1,5 +1,5 @@
 classdef Queue<handle
-    
+% Description: Queue Define
     properties(Access=private)
         link
     end

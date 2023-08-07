@@ -1,4 +1,6 @@
 function [solution, freq_variable] = Diversification_Generation(variable_number, low_bound, upper_bound, sub_range_length, solution_number)
+% Description:
+% Quantize a specify solution to neighborhood solutions
 sub_range_number = (upper_bound - low_bound) / sub_range_length;
 r = randi(sub_range_number, solution_number, variable_number);
 [C, ~, ic] = unique(r);

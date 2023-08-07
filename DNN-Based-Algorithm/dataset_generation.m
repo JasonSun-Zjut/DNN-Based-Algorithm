@@ -1,4 +1,6 @@
 function [dataset, estimate_coefficient] = dataset_generation(node, dataset_number)
+% Description: 
+% generate dataset based on the simulation result obtained by diffusion_rx_runner 
 r = 3;
 h = 1;
 transmitter_diffusion_coefficient = zeros(3,1); % DTx = 10 × 10−13m2/s

@@ -1,6 +1,5 @@
 classdef Node<handle
-    %Node class for doubly linked list 
-    
+% Description: Queue Node Define
     properties
         next
         previous

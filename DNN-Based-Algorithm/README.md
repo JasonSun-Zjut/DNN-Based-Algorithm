@@ -15,4 +15,4 @@ Matlab code to reproduce our DNN-Based Optimization algorithm for the Optimal Re
 - [main.m](main.m): the main file to run the DNN-Based Optimization algorithm
 
 # DNN-Based-Algorithm Diagram
-![Algorithm](Algorithm(version4).jpg).
+![Algorithm](Algorithm(version4).jpg)

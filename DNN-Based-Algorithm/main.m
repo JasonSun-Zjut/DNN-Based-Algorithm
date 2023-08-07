@@ -1,5 +1,5 @@
+% Description:
 % The DNN-Based Optimization Algorithm
-%%
 clear;
 % the number of transmitters in this model
 node = 3;

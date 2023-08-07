@@ -1,6 +1,9 @@
 function [coordinate] = rand_coordinate_generate(point, distance)
+
 % Description:
 % find a point that is a certain distance from another point
+% Parameter:
+
 % x-axis y-axis 扩展的步长
 %{
 step = distance;
@@ -17,4 +20,5 @@ coordiante_vector = [x(row)',y(col)'];
 x_coordinate = sqrt(distance^2/2);
 y_coordinate = sqrt(distance^2/2);
 coordinate = [point(1) + x_coordinate, point(2) + y_coordinate];
+
 end
