@@ -13,3 +13,6 @@ Matlab code to reproduce our DNN-Based Optimization algorithm for the Optimal Re
 - [Queue.m](Queue.m): define queue structure
   - [Node.m](Node.m): define node of the queue
 - [main.m](main.m): the main file to run the DNN-Based Optimization algorithm
+
+# DNN-Based-Algorithm Diagram
+![Algorithm](Algorithm(version4).jpg).
