@@ -1,13 +1,16 @@
 function Pe = error_probability(estimate_coefficient, n, NA, distance, diffusion_coefficient)
-% Description: error probability of Rx in current time slot
+% Description: error probability of the link from Tx1 to Rx, Tx2 to Rx, and Tx3 to Rx in current time slot
 % n: nth time slot
 % NA: number of molecules to emit
-
-Pe = zeros(3,1);
+r = 3;
+% Poisson Distribution Parameter under hypotheses H0 and H1
 mu_0 = zeros(3,1);
 mu_1 = zeros(3,1);
-r = 3;
+% the BER of the links Tx1 to Rx, Tx2 to Rx, and Tx3 to Rx
+Pe = zeros(3,1);
+
 probability_function = probability_mobile(estimate_coefficient(1), estimate_coefficient(2), estimate_coefficient(3), r, diffusion_coefficient, (n-1)*T, tau, distance);
+
 % Tx_1 transmit bit 0
 mu_0(1) = 0.5 * NA * probability_function(1);
 % Tx_1 transmit bit 1
